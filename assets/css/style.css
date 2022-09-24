@@ -1,0 +1,36 @@
+:root {
+
+}
+* {
+    box-sizing: border-box;
+    background-color: gray;
+}
+
+body {
+
+}
+
+header {
+    display: flex;
+
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav {
+
+}
+
+main {
+
+}
+
+.top-project {
+
+}
+
+.other-projects {
+
+}
