@@ -25,31 +25,81 @@ header img {
 
 header h1 {
     flex: 1 1 200px;
-    flex-direction: column;
     font-size: 3rem;
-    padding-bottom: 10px;
+    font-family: monospace;
 }
 
 header h3 {
     padding-bottom: 10px;
+
 }
-.header-navlinks li {
+.header-navlinks ul li {
     display: inline;
-    /* justify-self: flex-end; */
-    /* align-items: flex-end; */
-    /*I have no idea why these aren't doing anything? shouldn't it move them to the end of the flex container?*/
     font-family: monospace;
     font-size: 16px;
 }
 
 main {
+display: flex;
+flex-flow: column wrap;
+justify-content: center;
+max-width: 75vw;
+align-items: center;
+margin-left: 15vw;
+}
+ 
+main section {
+    flex: 1 0;
+    margin: 10px;
+}
 
+main h3 {
+    text-decoration: underline;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+main p {
+    text-align: center;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
 }
 
 .top-project {
-
+    flex: 2 0;
 }
 
-.other-projects {
+.top-project img {
+    width: 50vw;
+}
+
+.other-projects img {
+    /* flex: 1 0;  */
+    display: inline;
+    width: 25vw;
+}
+
+main h3 {
+    font-size: 2rem;
+}
+
+.other-projects img {
+    /* flex: 1 1 40vw; */
+    display: inline;
+    margin: auto;
+}
+
+@media screen and (max-width: 992px) {
+    header .header-navlinks ul li {
+        display: block;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
 
 }
