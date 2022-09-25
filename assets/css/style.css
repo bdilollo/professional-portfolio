@@ -51,6 +51,7 @@ margin-left: 15vw;
 main section {
     flex: 1 0;
     margin: 10px;
+    padding-bottom: 50px;
 }
 
 main h3 {
@@ -63,22 +64,21 @@ main p {
     text-align: center;
 }
 
-#projects {
-    display: flex;
+.project {
+    display: inline-flex;
     flex-wrap: wrap;
-    /* flex-direction: row; */
 }
-
-.top-project {
+.top {
+    display: block;
     flex: 2 0;
 }
 
-.top-project img {
+.top img {
     width: 50vw;
 }
 
-.other-projects img {
-    /* flex: 1 0;  */
+.other img {
+    flex: 1 0; 
     display: inline;
     width: 25vw;
 }
@@ -87,10 +87,8 @@ main h3 {
     font-size: 2rem;
 }
 
-.other-projects img {
-    /* flex: 1 1 40vw; */
-    display: inline;
-    margin: auto;
+#contact h3 {
+    padding-bottom: 15px;
 }
 
 @media screen and (max-width: 992px) {
