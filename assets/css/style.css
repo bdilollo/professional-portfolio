@@ -5,59 +5,54 @@
     box-sizing: border-box;
 }
 
-body {
-
-}
-
 header {
     display: flex;
-    padding-bottom: 5px;
+    padding-bottom: 2px;
     border-bottom: solid 5px;
     align-items: flex-end;
-    
 }
 
 header img {
     max-height: 125px;
     border: solid 1px;
     margin: 5px;
+    margin-bottom: 2px;
 }
 
 header h1 {
-    flex: 1 1 200px;
+    flex: 1;
+    /* the only thing this flex value seems to be doing is pushing the nav links to the right side of the page--why? That's not what flex-grow is supposed to do? */
     font-size: 3rem;
     font-family: monospace;
 }
 
-header h3 {
-    padding-bottom: 10px;
-
-}
-.header-navlinks ul li {
+.header-navlinks li {
     display: inline;
     font-family: monospace;
-    font-size: 16px;
+    font-size: 17px;
 }
+
 
 main {
 display: flex;
 flex-flow: column wrap;
-justify-content: center;
+/*justify-content: center; I thought I would need this in order to space things out vertically, since flex-direction is set to column. Yet, nothing changes no matter what value is entered--why? */
 max-width: 75vw;
 align-items: center;
-margin-left: 15vw;
+margin-left: 12.5vw;
+margin-top: 4vh;
 }
  
 main section {
-    flex: 1 0;
     margin: 10px;
-    padding-bottom: 50px;
+    padding-bottom: 6vh;
 }
 
 main h3 {
     text-decoration: underline;
     padding-bottom: 5px;
     text-align: center;
+    font-size: 2rem;
 }
 
 main p {
@@ -66,23 +61,21 @@ main p {
 
 .project {
     display: inline-flex;
-    flex-wrap: wrap;
     position: relative;
 }
 .top {
     display: block;
-    /* position: relative; */
-    flex: 2 0;
 }
 
 .top img {
-    width: 50vw;
+    width: 50.3vw;
 }
 
 div {
+    /* Add titles to project links */
     position: absolute;
-    bottom: 2px;
-    z-index: 2;
+    bottom: 9px;
+    z-index: 1;
     font-size: 2rem;
     background-color: gray;
     width: 100%;
@@ -90,19 +83,11 @@ div {
     font-family: sans-serif;
 }
 
+.other div {
+    font-size: 1.5rem;
+}
 .other img {
-    flex: 1 0; 
-    display: inline;
     width: 25vw;
-}
-
-.landing-page {
-    font-size: 1.9rem;
-    padding-top: 2px;
-}
-
-main h3 {
-    font-size: 2rem;
 }
 
 #contact h3 {
@@ -112,6 +97,7 @@ main h3 {
 #contact li {
     display: inline;
     padding: 10px;
+    font-size: 18px;
 }
 
 @media screen and (max-width: 992px) {
