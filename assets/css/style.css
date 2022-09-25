@@ -96,12 +96,22 @@ div {
     width: 25vw;
 }
 
+.landing-page {
+    font-size: 1.9rem;
+    padding-top: 2px;
+}
+
 main h3 {
     font-size: 2rem;
 }
 
 #contact h3 {
     padding-bottom: 15px;
+}
+
+#contact li {
+    display: inline;
+    padding: 10px;
 }
 
 @media screen and (max-width: 992px) {
